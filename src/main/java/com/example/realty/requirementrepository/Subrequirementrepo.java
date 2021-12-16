@@ -10,6 +10,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Repository
+
 public interface Subrequirementrepo extends JpaRepository<Subrequirementrepo,Long> {
 
     @Query("UPDATE SubRequirement c SET c.SubRequirement = :SubRequirement WHERE c.id = :SubRequirementId")
