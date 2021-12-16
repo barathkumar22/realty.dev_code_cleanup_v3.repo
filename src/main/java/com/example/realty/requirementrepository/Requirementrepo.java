@@ -9,6 +9,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Repository
+
 public interface Requirementrepo extends JpaRepository <Requirementrepo,Long> {
 
     @Query("SELECT u FROM Feature u WHERE u.status = 1")
